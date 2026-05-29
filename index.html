@@ -249,6 +249,8 @@
     transition: background 0.15s, transform 0.1s;
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
     font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+    border: none;
   }
   .whatsapp-btn:hover {
     background: var(--whatsapp-dark);
@@ -388,9 +390,72 @@
   }
   .step p {
     color: var(--texto-claro);
-    margin: 0;
+    margin: 0 0 12px;
     font-size: 15px;
     line-height: 1.6;
+  }
+  .step a.step-link {
+    color: var(--neo-rosa);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .step a.step-link:hover { text-decoration: underline; }
+
+  /* ============== CNPJ DESTAQUE ============== */
+  .cnpj-destaque {
+    background: var(--bg-claro);
+    padding: 56px 0;
+  }
+  .cnpj-box {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--branco);
+    border: 2px solid var(--neo-rosa);
+    border-radius: 16px;
+    padding: 32px 36px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+  @media (max-width: 700px) {
+    .cnpj-box { grid-template-columns: 1fr; padding: 24px; text-align: center; }
+  }
+  .cnpj-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--neo-rosa);
+    color: var(--branco);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  @media (max-width: 700px) {
+    .cnpj-icon { margin: 0 auto; }
+  }
+  .cnpj-content h3 {
+    margin: 0 0 8px;
+    color: var(--neo-roxo);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .cnpj-content p {
+    margin: 0;
+    color: var(--texto-claro);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .cnpj-content strong {
+    color: var(--neo-roxo);
+    font-weight: 600;
   }
 
   /* ============== PAGAMENTO ============== */
@@ -490,6 +555,23 @@
     border-color: var(--neo-roxo);
     transform: translateY(-2px);
   }
+  .service-tag.outros {
+    background: var(--neo-roxo);
+    color: var(--branco);
+    border-color: var(--neo-roxo);
+  }
+  .servicos-nota {
+    text-align: center;
+    color: var(--texto-claro);
+    font-size: 15px;
+    margin-top: 32px;
+    font-weight: 400;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  .servicos-nota strong { color: var(--neo-roxo); }
 
   /* ============== FAQ ============== */
   .faq { background: var(--branco); }
@@ -531,6 +613,7 @@
     line-height: 1.65;
     font-weight: 400;
   }
+  .faq-a strong { color: var(--neo-roxo); font-weight: 600; }
 
   /* ============== CTA FINAL ============== */
   .cta-final {
@@ -616,7 +699,7 @@
     <a href="#topo">
       <img src="logo-neo.png" alt="Neo Assistências" class="logo-img" />
     </a>
-    <a href="#cta" class="header-cta">
+    <a href="https://wa.me/551130621098?text=Ol%C3%A1!%20Cheguei%20pela%20landing%20page%20e%20quero%20me%20cadastrar%20como%20prestador%20Neo." class="header-cta">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       <span>Quero me cadastrar</span>
     </a>
@@ -632,7 +715,7 @@
         Rede em expansão pelo Brasil
       </div>
       <h1>Mais chamados,<br /><span class="destaque">pagamento toda sexta-feira.</span></h1>
-      <p class="lead">A Neo está crescendo a rede direta de prestadores em todo o Brasil. Sem intermediador comendo a comissão, com pagamento rápido e ampla gama de serviços residenciais.</p>
+      <p class="lead">A Neo está crescendo a rede direta de prestadores em todo o Brasil. Cadastro descomplicado, sem intermediador e com pagamento semanal pra você planejar melhor seu fluxo.</p>
 
       <div class="hero-benefits">
         <div class="hero-benefit">
@@ -645,7 +728,11 @@
         </div>
         <div class="hero-benefit">
           <span class="check">✓</span>
-          Atendimento direto
+          Cadastro simples
+        </div>
+        <div class="hero-benefit">
+          <span class="check">✓</span>
+          CNPJ ativo obrigatório
         </div>
       </div>
     </div>
@@ -679,8 +766,8 @@
       </div>
       <div class="card color-2">
         <div class="icon-box">↑</div>
-        <h3>Demanda constante</h3>
-        <p>Rede em crescimento por todo o Brasil. Quanto mais cidades e serviços você cobrir, mais chamados aparecem.</p>
+        <h3>Rede em expansão</h3>
+        <p>A Neo está crescendo em todo o Brasil. Quanto mais você se compromete com a qualidade, mais a parceria evolui junto.</p>
       </div>
       <div class="card color-3">
         <div class="icon-box">∞</div>
@@ -703,17 +790,33 @@
       <div class="step">
         <div class="step-number">1</div>
         <h3>Conversa pelo WhatsApp</h3>
-        <p>Você clica no botão da página, fala com nosso time e a gente te guia pelo cadastro com CNPJ, dados bancários e cidades onde você atende.</p>
+        <p>Você fala com nosso time pelo WhatsApp e a gente te guia pelo cadastro com CNPJ, dados bancários e cidades onde você atende. Sem burocracia.</p>
+        <a href="https://wa.me/551130621098?text=Ol%C3%A1!%20Cheguei%20pela%20landing%20page%20e%20quero%20me%20cadastrar%20como%20prestador%20Neo." class="step-link">
+          Falar com a Neo agora →
+        </a>
       </div>
       <div class="step">
         <div class="step-number">2</div>
-        <h3>Recebe chamados</h3>
-        <p>Após aprovação do cadastro, começa a receber acionamentos por WhatsApp. Você aceita os que conseguir atender.</p>
+        <h3>Recebe os acionamentos</h3>
+        <p>Após aprovação do cadastro, você passa a receber os chamados pelo sistema da Neo, WhatsApp ou telefone. Esperamos parceiros comprometidos com a qualidade do atendimento — quanto mais consistente, mais a parceria cresce.</p>
       </div>
       <div class="step">
         <div class="step-number">3</div>
         <h3>Recebe o pagamento</h3>
-        <p>Emite a nota até quarta-feira da semana seguinte ao atendimento e recebe na sexta-feira da mesma semana.</p>
+        <p>Emite a nota fiscal após atender e envia para o nosso fechamento. Quem envia até quarta-feira recebe na sexta da mesma semana. Sem espera de 30, 45 ou 60 dias.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CNPJ DESTAQUE -->
+<section class="cnpj-destaque">
+  <div class="container">
+    <div class="cnpj-box">
+      <div class="cnpj-icon">!</div>
+      <div class="cnpj-content">
+        <h3>Pré-requisito: CNPJ ativo</h3>
+        <p>Pra fazer parte da rede Neo é necessário ter <strong>CNPJ ativo e apto a emitir nota fiscal</strong>. Aceitamos MEI, mas o cadastro precisa estar regular. Pagamentos são feitos exclusivamente via PIX ou TED no CNPJ cadastrado — <strong>nunca pra pessoa física</strong>.</p>
       </div>
     </div>
   </div>
@@ -750,7 +853,7 @@
   <div class="container section-header-center">
     <span class="section-eyebrow">Cobertura</span>
     <h2 class="section-title">Serviços que aceitamos</h2>
-    <p class="section-sub">Se você atua em algum desses, queremos conversar.</p>
+    <p class="section-sub">Atuamos com uma ampla gama de serviços residenciais. Alguns exemplos:</p>
   </div>
   <div class="container">
     <div class="service-tags">
@@ -766,7 +869,9 @@
       <span class="service-tag">Vidraçaria</span>
       <span class="service-tag">Reparo de telhado</span>
       <span class="service-tag">Desentupimento</span>
+      <span class="service-tag outros">e muitos outros</span>
     </div>
+    <p class="servicos-nota">Não viu seu serviço? <strong>Fala com a gente.</strong> A rede está em expansão e novos serviços são incorporados conforme a demanda das cidades.</p>
   </div>
 </section>
 
@@ -783,24 +888,24 @@
         <div class="faq-a">Não. O cadastro é gratuito. Você só recebe pelos serviços que aceitar e atender.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Como funciona o pagamento exatamente?</summary>
-        <div class="faq-a">Você atende o chamado, emite a nota fiscal até quarta-feira da semana seguinte e recebe na sexta-feira dessa mesma semana. Toda semana, sem fechamento mensal.</div>
+        <summary class="faq-q">Como funciona o pagamento?</summary>
+        <div class="faq-a">Você atende o chamado e emite a nota fiscal. Se emitir <strong>até quarta-feira</strong>, recebe na <strong>sexta-feira da mesma semana</strong>. Se emitir a partir de quinta-feira, o pagamento entra no ciclo da semana seguinte. O fechamento é feito por diversos canais pra você emitir a nota corretamente — os detalhes operacionais são enviados na nossa carta de boas-vindas após o cadastro aprovado.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Preciso ter CNPJ?</summary>
-        <div class="faq-a">Sim, aceitamos MEI também. No cadastro a gente pede CNPJ, dados bancários e algumas informações da empresa.</div>
+        <div class="faq-a">Sim, é obrigatório. Aceitamos MEI também, mas o CNPJ precisa estar <strong>ativo e apto a emitir nota fiscal</strong>. O pagamento é feito exclusivamente pra esse CNPJ via PIX ou TED — nunca pra pessoa física. Se durante a parceria o CNPJ for desativado ou perder a aptidão pra emitir nota, a parceria fica suspensa até regularização.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Quantos chamados eu recebo por mês?</summary>
-        <div class="faq-a">Depende muito da sua cidade e do tipo de serviço. Quanto mais cidades você cobrir, mais chamados aparecem. Nosso time consegue te dar uma estimativa pra sua região na conversa.</div>
+        <div class="faq-a">Não trabalhamos com previsão fixa de volume. A demanda varia conforme a cidade, o tipo de serviço e o crescimento da rede na sua região. A Neo está em expansão por todo o Brasil — quanto mais cidades e serviços você cobrir, mais oportunidades aparecem.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Em quais cidades a Neo atende?</summary>
-        <div class="faq-a">Atendemos todo o Brasil. A densidade de chamados varia por cidade — capitais e regiões metropolitanas têm volume maior.</div>
+        <div class="faq-a">Atendemos todo o Brasil, com presença mais consolidada em capitais e regiões metropolitanas. A cobertura está em crescimento contínuo conforme novos prestadores e parceiros se somam à rede.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Quanto tempo leva pra começar a receber chamados?</summary>
-        <div class="faq-a">Depois do cadastro completo aprovado, você entra na fila de prioridade e costuma receber os primeiros acionamentos em até 7 dias.</div>
+        <div class="faq-a">Depende muito da cidade e do volume de serviço na sua região. Em algumas áreas com alta demanda, os primeiros chamados podem chegar logo após a aprovação. Em outras, pode levar mais tempo conforme a Neo expande a operação local. Não conseguimos garantir um prazo fixo — a parceria cresce no ritmo da demanda.</div>
       </details>
     </div>
   </div>
@@ -810,7 +915,7 @@
 <section class="cta-final">
   <div class="container">
     <h2>Vamos começar?</h2>
-    <p>Clica no botão, fala com nosso time e em uns dias você está recebendo os primeiros chamados.</p>
+    <p>Clica no botão, fala com nosso time e em poucos dias você pode estar recebendo os primeiros chamados.</p>
     <a href="https://wa.me/551130621098?text=Ol%C3%A1!%20Cheguei%20pela%20landing%20page%20e%20quero%20me%20cadastrar%20como%20prestador%20Neo." class="whatsapp-btn">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       Falar com a Neo agora
